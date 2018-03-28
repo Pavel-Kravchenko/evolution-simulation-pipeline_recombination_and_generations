@@ -1,4 +1,22 @@
 # evolution-simulation-pipeline_recombination_and_generations
+
+<script type="text/javascript">
+var s=[],s_timer=[];
+ function show(id,h,spd)
+ { s[id]= s[id]==spd? -spd : spd;
+ s_timer[id]=setTimeout(function() {
+ var obj=document.getElementById(id);
+ if(obj.offsetHeight+s[id]>=h){obj.style.height=h+"px";obj.style.overflow="auto";}
+ else if(obj.offsetHeight+s[id]<=0){obj.style.height=0+"px";obj.style.display="none";}
+ else {obj.style.height=(obj.offsetHeight+s[id])+"px";
+ obj.style.overflow="hidden1";
+ obj.style.display="block";
+ setTimeout(arguments.callee, 10);
+ }
+ }, 10);
+ }
+</script> 
+
 This is the evolution simulator to compute populations with all possible ranges of recombination, generations and mutations. It creates sets of sequences with different evolution parameters
 
 This pipeline is the part of bioengineering and bioinformatics faculty coursework
@@ -107,7 +125,13 @@ Het\Gen	4	8	16	32	64	128	256	512
 ```
 
 To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
+You may variate following parameters:
 
+<div><a href="#open"  style="decoration: none" onclick="show('hidden1',500,50)"><center> <p>Отчёт по работе программы FastQC</p>
+</center>
+</a> </div>
+<div id=hidden1 style="display:none;height:200px;width:100%;background-color:#f6f1e9">
+</div>
 
 ## Contact me
 
