@@ -108,7 +108,7 @@ Het\Gen	4	8	16	32	64	128	256	512
 ```
 
 To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
-You may variate following parameters:</b>
+You may variate following parameters:</br>
 In run_script.sh
 <ul>
 <li>mask=0.25
