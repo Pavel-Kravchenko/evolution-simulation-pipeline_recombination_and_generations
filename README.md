@@ -109,13 +109,27 @@ Het\Gen	4	8	16	32	64	128	256	512
 
 To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
 You may variate following parameters:
+In run_script.sh
+<ul>
+<li>mask=0.25
+<li>species=128
+</ul>
+In heatmap_df_maker.py
+<ul>
+<li>round_ = 3
+<li>pvalue_stop = 0.05
+</ul>
+In alignment_reader_script.py
+<ul>
+<li>round_ = 4
+</ul>
+In simulation_script.py
+<ul>
+<li>length_of_sequence = 1000
+<li>round_ = 4
+</ul>
 
-<div><a href="#open"  style="decoration: none" onclick="show('hidden1',500,50)"><center> <p>In run_script.sh</p>
-</center>
-</a> </div>
-<div id=hidden1 style="display:none;height:200px;width:100%;background-color:#f6f1e9">
- hello
-</div>
+Than you change generation, recombination or mutation in run_script.sh do not forget to change same parameters (iter_ = mutation, het_rank = recombination, generation = generation) in heatmap_df_maker.py.
 
 ## Contact me
 
