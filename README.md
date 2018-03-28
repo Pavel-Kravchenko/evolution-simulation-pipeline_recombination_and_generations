@@ -44,7 +44,7 @@ You are expected to receive such demo results in ./Files:
 ```
 
 ```
-For create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
+To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
 
 
 ## Contact me
