@@ -129,7 +129,7 @@ In simulation_script.py
 <li>round_ = 4
 </ul>
 
-Than you change generation, recombination or mutation parameters in run_script.sh, do not forget to change the same parameters (iter_ = mutation, het_rank = recombination, generation = generation) in heatmap_df_maker.py.
+When you change generation, recombination or mutation parameters in run_script.sh, do not forget to change the same parameters (iter_ = mutation, het_rank = recombination, generation = generation) in heatmap_df_maker.py.
 
 ## Contact me
 
