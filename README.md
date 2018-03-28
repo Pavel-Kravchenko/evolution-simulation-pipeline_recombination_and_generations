@@ -108,7 +108,7 @@ Het\Gen	4	8	16	32	64	128	256	512
 ```
 
 To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
-You may variate following parameters:
+You may variate following parameters:</b>
 In run_script.sh
 <ul>
 <li>mask=0.25
@@ -129,7 +129,7 @@ In simulation_script.py
 <li>round_ = 4
 </ul>
 
-Than you change generation, recombination or mutation in run_script.sh do not forget to change same parameters (iter_ = mutation, het_rank = recombination, generation = generation) in heatmap_df_maker.py.
+Than you change generation, recombination or mutation parameters in run_script.sh, do not forget to change the same parameters (iter_ = mutation, het_rank = recombination, generation = generation) in heatmap_df_maker.py.
 
 ## Contact me
 
