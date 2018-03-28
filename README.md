@@ -37,22 +37,73 @@ simulation_script.py
 ```
 Now you are ready to start.
 To check, command 
-```bash run_script.sh``` and wait until the program is completed.
+```bash run_script.sh``` and wait until the program is completed. 
+!!!You may have to wait a couple of hours!!!
 It has to create ``./Files`` directory and archive it to ``archive.tar``
 You are expected to receive such demo results in ./Files:
 
 ```
+out_log_file_1.txt
+out_log_file_2.txt
+out_log_file_4.txt
+simulation_heteroplasmy|gen_128|het-rank_0|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_0|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_0|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_100|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_100|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_100|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_10|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_10|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_10|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_1|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_1|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_1|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_25|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_25|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_25|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_50|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_50|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_50|mutations_4_0.25
+simulation_heteroplasmy|gen_128|het-rank_80|mutations_1_0.25
+simulation_heteroplasmy|gen_128|het-rank_80|mutations_2_0.25
+simulation_heteroplasmy|gen_128|het-rank_80|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_0|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_0|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_0|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_100|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_100|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_100|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_10|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_10|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_10|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_1|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_1|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_1|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_25|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_25|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_25|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_50|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_50|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_50|mutations_4_0.25
+simulation_heteroplasmy|gen_16|het-rank_80|mutations_1_0.25
+simulation_heteroplasmy|gen_16|het-rank_80|mutations_2_0.25
+simulation_heteroplasmy|gen_16|het-rank_80|mutations_4_0.25
+...
 
 ```
 
 
-``out_log_file_2.txt`` contains the Kendall's rank correlation tau table
+``out_log_file_1.txt`` contains the Kendall's rank correlation tau table
 
 ```
-Spe\Gen	2	4	8	
-2	NA	NA	NA	
-4	NA	NA	NA	
-8	NA	-0.683	-0.423	
+Het\Gen	4	8	16	32	64	128	256	512	
+0	NA	NA	NA	NA	NA	NA	NA	NA	
+1	NA	NA	NA	-0.535	0.224	NA	NA	NA	
+10	NA	NA	NA	NA	-0.138	-0.15	-0.138	-0.215	
+25	NA	NA	NA	NA	-0.179	-0.228	-0.206	-0.271	
+50	NA	NA	NA	NA	-0.354	-0.259	-0.265	-0.298	
+80	NA	NA	NA	NA	-0.183	-0.209	-0.206	-0.166	
+100	NA	NA	NA	NA	-0.342	-0.352	-0.232	-0.233	
 ```
 
 To create your populations and analyze them, change necessary parameters in run_script.sh and heatmap_df_maker.py
